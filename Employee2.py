@@ -1,4 +1,4 @@
-class Employee:
+class Employee2:
     num_of_emp = 0
     raise_amt = 1.04
 
@@ -32,8 +32,8 @@ class Employee:
         return True
 
 
-emp_1 = Employee()
-emp_2 = Employee()
+emp_1 = Employee2()
+emp_2 = Employee2()
 
 emp_str1 = 'Ako-Atem-3000'
 emp_str2 = 'Ben-Suh-4857'
@@ -46,17 +46,17 @@ emp_str3 = 'Waley-Grey-7473'
 #print(new_emp_1.email)
 #print(new_emp_1.pay)
 
-Employee.set_raise_amt(1.05)  # to change the raise amount
+Employee2.set_raise_amt(1.05)  # to change the raise amount
 emp_1.set_raise_amt(1.90)  # you can still increase it from class variable
 
-print(Employee.raise_amt)
+print(Employee2.raise_amt)
 print(emp_1.raise_amt)
 print(emp_2.raise_amt)
 
 import datetime
 
 my_date = datetime.date(2001, 7, 10)
-print(Employee.is_workday(my_date))
+print(Employee2.is_workday(my_date))
 
 # (emp_1.fullname())  #this is print for both emp1 and emp2
 # print(emp_2.fullname())
