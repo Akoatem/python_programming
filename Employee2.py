@@ -2,7 +2,7 @@ class Employee2:
     num_of_emp = 0
     raise_amt = 1.04
 
-    def __int__(self, first, last, pay):
+    def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
@@ -32,8 +32,8 @@ class Employee2:
         return True
 
 
-emp_1 = Employee2()
-emp_2 = Employee2()
+emp_1 = Employee2('Ako', 'Atem', 1000)
+emp_2 = Employee2('Sam', 'Dude', 2000)
 
 emp_str1 = 'Ako-Atem-3000'
 emp_str2 = 'Ben-Suh-4857'
@@ -57,6 +57,10 @@ import datetime
 
 my_date = datetime.date(2001, 7, 10)
 print(Employee2.is_workday(my_date))
+
+print(emp_1.first)
+print(emp_1.last)
+print(emp_1.pay)
 
 # (emp_1.fullname())  #this is print for both emp1 and emp2
 # print(emp_2.fullname())
